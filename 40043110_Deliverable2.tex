@@ -1,0 +1,411 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{lipsum}
+\usepackage[margin=0.8in,includefoot]{geometry}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[table]{xcolor}
+\usepackage{xcolor}
+%\title{srsd2}
+%\author{sandeep.19920622 }
+%\date{August 2019}
+
+
+%HEADER AND FOOTER STUFF
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+%DOCUMENT START
+\begin{document} 
+
+\begin{titlepage}
+\title{\includegraphics[height=13cm, width=18cm]{6481.png}}
+\end{titlepage}
+
+\maketitle
+\begin{center}
+\url{https://github.com/Singh-Sandy/SOEN_6481}
+\end{center}
+\thispagestyle{empty}
+
+
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+
+%\section{}
+
+%USER STORIES:
+%\paragraph{hldvknvs knkdvns . ndsvnov nopvds ano nodpv iopwd now niowf nioodw nopwnvd nowdifn nnow nownfe }
+%\paragraph{ckdc dfjopsa jpfds . jpd jpmo djp jpodw fjp w}
+%\subsection {hello how are you}
+%\newpage
+%$x^2+4x+4=(X+4^2)$
+%$$ sin(x)^2 + cos(x)^2 = 1$$
+
+%A normal table:
+
+%\begin{tabular}{|l|p{2cm}|l|l|p{2cm}|p{2cm}|l|}
+						
+ %   \hline
+  %  IDENTIFIER     & STATEMENT & PRIORITY & QUALITY ATTRIBUTE & CONSTRAINTS & ACCEPTANCE CRITERIA & ESTIMATE \\
+   % \hline
+    %US-1 & As a user I want to add two number so that I can see what the total is.   & 1 & Usability   & A user must enter two number to perform the operation. & Given I have two number 2 and 3 when I add them then I should see the sum as 5 & 1\\
+    %\hline
+    
+%\end{tabular}
+\newpage
+\setcounter{page}{1}
+\section{PROBLEM 6: For your persona, elicit, decide, and create a set of user stories for your ETERNITY: NUMBERS. }
+
+\subsection{Priority} 
+The priority of the user stories is set based on their importance and use. This helps us to make sure about the delivery of most immediate business benefit as early as possible.
+
+For the customers to better understand the impact of setting a priority we use High, Medium and Low as an indicators. 
+
+\subsection{Quality attributes}  
+Quality attributes are realized non-functional requirements used to evaluate the performance of a system. The following quality attributes are used to define the use stories.
+
+\subsubsection{Operability}  
+The means the degree to which a software product has attributes that makes it easy to operate and control.
+
+\subsubsection{Reliability}
+It means the degree to which a software product performs specified functions, under specified conditions, for a specified period of time.
+
+\subsubsection{Suitability}
+It means the degree to which a software product provides functions that meet stated and implied needs when used under specified conditions.
+
+\subsubsection{Usability}
+It means the degree to which a software product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction, in a specified context of use.
+
+\subsection{Constraints}
+The constraints we put on the system help in narrow the design choices.
+
+\subsection{Acceptance Criteria}
+It is a set of accepted conditions and rules which the functionality should satisfy and meet in order to be accepted by the product owner. This is in agreement with the ‘T’ of INVEST and INSERT. The acceptance criteria include one or more tests to confirm a user story. 
+
+\subsection{Estimate} It is the criteria which define how much time it is going to take to complete a user stories. It is estimated using the fibonacci series. In this the user stories with high priority is implemented before the user stories having medium and low priority.
+
+\newpage
+\vspace*{1 cm}
+%\begin{flushleft}
+%\rowcolors{1}{green}{pink}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-1 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to do arithmetic operations (+,-,*,/), so that I can perform basic mathematical operations.\\
+    \hline
+    \textbf{PRIORITY}     & High \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Usability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must enter two number to perform the operation.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA}    & Given I have two number 2 and 3 when I add them then I should see the sum as 5 \\
+    \hline
+    \textbf{ESTIMATE}     & 1 \\
+    \hline
+\end{tabular}
+
+%\end{flushleft}
+
+\vspace*{2 cm}
+%\begin{table}[h]
+%    \centering
+%    \caption{User Stories-2}
+%    \vspace{1ex}
+%    \label{}
+    \begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-2 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to toggle the sign of numbers, so that I can reverse them at will.\\
+    \hline
+    \textbf{PRIORITY}     & Medium \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Operability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must enter a digit.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA}    & 1.	Given I have a number 2 when I press the toggle key (+, -) then I should see -2 on the display.
+    
+    2.	Given I have a number -2 when I press the toggle key (+, -) then I should see 2 on the display.\\
+    \hline
+    \textbf{ESTIMATE}     & 2 \\
+    \hline
+    \end{tabular}
+%\end{table}
+
+\vspace*{2 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-3 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to delete wrongly entered digit, so that I can correct the number input.\\
+    \hline
+    \textbf{PRIORITY}     & Medium \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Reliability \\
+    \hline
+    \textbf{CONSTRAINTS}    & A user must enter some digit.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA}    & 1.	Given I have pressed keys 2, 3, 4 when I press the backspace key then I should see 2 ,3 on the display.
+    
+    2.	Given I have pressed keys 2 when I press the backspace key then I should see 0 on the display.\\
+    \hline
+    \textbf{ESTIMATE}     & 2 \\
+    \hline 
+    \end{tabular}
+
+
+\newpage
+\vspace*{0.8 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}    & US-4 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to store the number in the memory, so that I can use it later.\\
+    \hline
+    \textbf{PRIORITY}     & Medium \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Usability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must enter some number to store in the memory.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA}    & Given I pressed 2 on the keypad.
+
+    When I press M in key
+    
+    Then the number 2 should be stored in the memory\\
+    \hline
+    \textbf{ESTIMATE}     & 2 \\
+    \hline 
+\end{tabular}
+
+\vspace*{2 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-5 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to reset the calculator, so that I can start afresh.\\
+    \hline
+    \textbf{PRIORITY}     & Low \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Usability \\
+    \hline
+    \textbf{CONSTRAINTS}    & A user must perform some calculation before clear the screen.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   Given I am in the middle of an operation when I press the ‘CE’ key then the operation should be cancelled, and the calculator should show 0 to indicate the calculator is ready for the next operation.\\
+    \hline
+    \textbf{ESTIMATE}     & 3 \\
+    \hline 
+\end{tabular}
+
+\vspace*{2 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-6 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to store operation in the memory, so that I can recall them to see the steps resulted in the final answer.\\
+    \hline
+    \textbf{PRIORITY}     & Medium \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Reliability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must perform some calculation.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   Given I have performed two operation 2*3 = 6 and 6+3 = 9
+    
+    When I replay the operation by pressing the step key the following results should be shown to me step by step.
+\\
+    \hline
+    \textbf{ESTIMATE}     & 5 \\
+    \hline 
+\end{tabular}
+
+\newpage
+\vspace*{0.8 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-7 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to find the silver ratio between two number.\\
+    \hline
+    \textbf{PRIORITY}     & High \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE }    & Operability \\
+    \hline
+    \textbf{CONSTRAINTS}     & a > b, the value of ‘a’ is always greater than ‘b’.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   Given I have two number I will be able to find the silver ratio between two number.\\
+    \hline
+    \textbf{ESTIMATE}     & 1 \\
+    \hline 
+\end{tabular}
+
+\vspace*{2 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-8 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want to find the area of octagon using the silver ratio.\\
+    \hline
+    \textbf{PRIORITY}     & High \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Operability \\
+    \hline
+    \textbf{CONSTRAINTS}     & The value of ‘a’ should be given as an input by the user to find the area of the octagon.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   Given the length of the side of the octagon I will be able to find its area.\\
+    \hline
+    \textbf{ESTIMATE}     & 1 \\
+    \hline 
+\end{tabular}
+
+\vspace*{2 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-9 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want 10 clickable elements containing one number of each from 0-9, so that I can use them in the calculation.\\
+    \hline
+    \textbf{PRIORITY}     & High \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Usability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must enter the number to perform the operation.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   Given I have various numbers from 0-9, I can use them for calculation purposes.\\
+    \hline
+    \textbf{ESTIMATE}     & 1 \\
+    \hline 
+\end{tabular}
+
+\newpage
+\vspace*{0.8 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-10 \\
+    \hline
+    \textbf{STATEMENT} & As a user, I want a clickable element containing “.”, so that I can use them in decimal calculation.\\
+    \hline
+    \textbf{PRIORITY}     & Low \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Usability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must enter the number with decimal point.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   Given I have various decimal numbers, I can use them for calculation purposes.\\
+    \hline
+    \textbf{ESTIMATE}     & 2 \\
+    \hline 
+\end{tabular}
+
+\vspace*{2 cm}
+
+\begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{IDENTIFIER}     & US-11 \\
+    \hline
+    \textbf{STATEMENT} & As a user, in want a clickable element, so that I can clear all the entered values.\\
+    \hline
+    \textbf{PRIORITY}     & Medium \\
+    \hline
+    \textbf{QUALITY ATTRIBUTE}     & Reliability \\
+    \hline
+    \textbf{CONSTRAINTS}     & A user must enter the number.\\
+    \hline
+    \textbf{ACCEPTANCE CRITERIA} &   At any time, pressing the clear button clears the input and output values..\\
+    \hline
+    \textbf{ESTIMATE}     & 2 \\
+    \hline 
+\end{tabular}
+
+\newpage
+\section{PROBLEM 7. Create a backward traceability matrix for your ETERNITY: NUMBERS. }
+
+
+\subsection{Traceability}
+The potential for the trace to be established ans used.Traceability is thereby an attribute of an artifact or of a collection of artifacts.
+
+ \subsection{Backward Traceability}
+ The potential for tracing antecedent steps in a development path, which is not necessarily a chronological path.
+ 
+ \subsection{Traceability Matrix}
+ The user stories identifiers, in the same order, can be placed in the first row and the resources from where the user stories are elicited are placed in the column of a matrix, and then the user stories that are related to resources in some manner could be highlighted by placing a marker in the appropriate row/column of the matrix.
+
+
+\newpage
+\begin{flushleft}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{RESOURCES} & \textbf{User Story} & \textbf{Use Cases} & \textbf{Survey} & \textbf{Persona} & \textbf{Internet} & \textbf{Personal experience} \\
+    \hline
+    \textbf{USERSTORIES} &  &  &  &  &  &  \\
+    \hline
+    \textbf{US1} & $\surd$ & $\surd$ & - & $\surd$ & $\surd$ & $\surd$ \\
+    \hline
+    \textbf{US2} & $\surd$ & $\surd$ & - & $\surd$ & $\surd$ & $\surd$ \\
+    \hline
+    \textbf{US3} & $\surd$ & $\surd$ & - & $\surd$ & $\surd$ & $\surd$ \\
+    \hline
+    \textbf{US4} & - & $\surd$ & - & $\surd$ & $\surd$ & $\surd$ \\
+    \hline
+    \textbf{US5} & - & - & - & $\surd$ & $\surd$ & - \\
+    \hline 
+    \textbf{US6} & - & - & - & - & $\surd$ & -  \\
+    \hline 
+    \textbf{US7} & $\surd$ & $\surd$ & - & $\surd$ & $\surd$ & -  \\
+    \hline 
+    \textbf{US8} & - & - & - & $\surd$ & $\surd$ & $\surd$ \\
+    \hline 
+    \textbf{US9} & $\surd$ & $\surd$ & - & $\surd$ & $\surd$ & - \\
+    \hline 
+    \textbf{US10} & $\surd$ & $\surd$ & - & $\surd$ & $\surd$ & -  \\
+    \hline 
+    \textbf{US11} & - & $\surd$ & - & $\surd$ & $\surd$ & -  \\
+    \hline 
+    %\textbf{US12} & - & $\surd$ & - & $\surd$ & $\surd$ & -  \\
+    %\hline 
+    %\textbf{US13} & $\surd$ & - & - & $\surd$ & $\surd$ & -  \\
+    %\hline 
+    %\textbf{US14} & $\surd$ & - & - & $\surd$ & $\surd$ & -  \\
+    %\hline 
+\end{tabular}
+\end{flushleft}
+
+
+
+\newpage
+\begin{thebibliography}{99}
+\bibitem{}\url{https://www.softwaretestinghelp.com/user-story-acceptance-criteria/}
+
+\bibitem{}\url{https://en.wikipedia.org/wiki/List_of_system_quality_attributes}
+
+\bibitem{}\url{http://users.encs.concordia.ca/~kamthan/courses/soen-6481/user_stories_context.pdf}
+
+\bibitem{}\url{http://users.encs.concordia.ca/~kamthan/courses/soen-6481/software_requirements_traceability.pdf}
+
+\end{thebibliography}
+
+\end{document}
